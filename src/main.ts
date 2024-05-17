@@ -1,4 +1,4 @@
-
+/*
 import { bootstrapCameraKit } from '@snap/camera-kit';
 
 (async function () {
@@ -23,3 +23,4 @@ import { bootstrapCameraKit } from '@snap/camera-kit';
 
   await session.applyLens(lens);
 })();
+*/
