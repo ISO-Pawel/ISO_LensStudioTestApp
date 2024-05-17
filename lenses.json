@@ -1,5 +1,5 @@
 [
-    {"name": "Lens 1", "id": "lens_id_1"},
-    {"name": "Lens 2", "id": "lens_id_2"},
-    {"name": "Lens 3", "id": "lens_id_3"}
+    {"name": "Lens 1", "id": "0"},
+    {"name": "Lens 2", "id": "1"},
+    {"name": "Lens 3", "id": "2"}
 ]
