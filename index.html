@@ -13,38 +13,5 @@
         <option value="" disabled selected>Select a lens</option>
     </select>
     <div id="cameraContainer" style="width: 100%; height: 500px;"></div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const lensDropdown = document.getElementById('lensDropdown');
-            const cameraContainer = document.getElementById('cameraContainer');
-
-            // Fetch the lens data
-            fetch('lenses.json')
-                .then(response => response.json())
-                .then(lenses => {
-                    lenses.forEach(lens => {
-                        const option = document.createElement('option');
-                        option.value = lens.id;
-                        option.textContent = lens.name;
-                        lensDropdown.appendChild(option);
-                    });
-                });
-
-            // Initialize Camera Kit
-            const camera = new SnapCameraKit.Camera({
-                container: cameraContainer,
-                clientToken: 'YOUR_CLIENT_TOKEN'
-            });
-
-            // Handle lens change
-            lensDropdown.addEventListener('change', (event) => {
-                const selectedLensId = event.target.value;
-                if (selectedLensId) {
-                    camera.loadLens(selectedLensId);
-                }
-            });
-        });
-    </script>
 </body>
 </html>
